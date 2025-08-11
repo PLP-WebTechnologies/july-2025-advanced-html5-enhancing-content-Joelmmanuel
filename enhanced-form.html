@@ -1,1 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
 
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="keywords" content=""/>
+    <meta name="author" content="Joel Manuel" />
+    <title>ADVANCED-HTML5</title>    
+</head>
+
+<body>
+    <header>
+       <h1></h1> 
+       <nav>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#tables">Tables</a></li>
+                <li><a href="#multibia">Multimidia</a></li>
+                <li><a href="#forma">Forms</a></li>   
+            </ul>
+        </nav>
+    </header>
+    
+    <main>
+        <section id="tables">
+            <div>
+                <table border="1" cellpadding="7" cellspacing="1" style="width: 70%;">
+                    <thead>
+                        <tr>
+                            <th>Fullname</th>
+                            <th>Age</th>
+                            <th>ID Reference</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Joel Manuel</td>
+                            <td>28</td>
+                            <td>006405507LA048</td>
+                        </tr>
+                        <tr>
+                            <td>Tedora Andrea</td>
+                            <td>26</td>
+                            <td>023005696LA034</td>
+                        </tr>
+                        <tr>
+                            <td>Denilson Antonio</td>
+                            <td>10</td>
+                            <td>023876576BA278</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </section>
+        <section id="multimedia">
+            <h2>Multimedia Section</h2>
+            <p>Here have various multimedia elements.</p>
+            <video width=520" height="340" controls    id="video-player">
+                <source src="VIDEO/Wallpaper.mp4" type="video/mp4">
+            </video>
+            <br>
+            <img src="IMG/1369866.PNG" alt="totoro" width="520" height="340">
+            <br>
+            <audio controls id="audio-player">
+                <source src="MUSIC/music.mp3" type="audio/mpeg" aria-controls="audio-player">
+            </audio>
+        </section>
+        <section>
+            <h2>SEARCH YOUR INFO</h2>
+            <form action="#" method="post">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required >
+                <br>
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+                <br>
+                <label for="phone">Zip    :</label>
+                <input type="text" name="zipcode" pattern="[0-9]{5}" title="Five digit zip code">
+                <br>
+                <input type="submit" value="Search">    
+            </form>
+        </section>
+
+    </main>
+
+    <footer>
+        <p>© 2025 Joel Manuel</p>
+        <p>Email: Joelcash14@gmail.com  <a href="mailto:"></a></p>
+    </footer>
+</body>
+</html>
